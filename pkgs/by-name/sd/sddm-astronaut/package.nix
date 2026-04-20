@@ -12,10 +12,10 @@ stdenvNoCC.mkDerivation rec {
   version = "1.0-unstable-2025-01-05";
 
   src = fetchFromGitHub {
-    owner = "Keyitdev";
+    owner = "Back-Slash-N";
     repo = "sddm-astronaut-theme";
-    rev = "11c0bf6147bbea466ce2e2b0559e9a9abdbcc7c3";
-    hash = "sha256-gBSz+k/qgEaIWh1Txdgwlou/Lfrfv3ABzyxYwlrLjDk=";
+    rev = "bd93b315bec56ce4c21e180358ada8f6812c5bf5";
+    hash = "sha256-H2eGkGYTRyGCd+43xsDC1TfnBfbQ8QaaMeLI+HCfmqk=";
   };
 
   dontWrapQtApps = true;
