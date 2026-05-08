@@ -34,12 +34,10 @@ buildDotnetModule rec {
   pname = "ryubing";
   version = "1.3.3";
 
-  src = fetchFromGitLab {
-    domain = "git.ryujinx.app";
-    owner = "Ryubing";
-    repo = "Ryujinx";
-    tag = version;
-    hash = "sha256-LhQaXxmj5HIgfmrsDN8GhhVXlXHpDO2Q8JtNLaCq0mk=";
+  src = fetchGit {
+    url = "https://git.ryujinx.app/Ryubing/Ryujinx.git";
+    rev = "433dd58f8ce2fca3df3fa8b20bef7f003fc5a2a9";
+    # hash = "sha256-yLf0NkdZvGNI7bbzx3Qursk3rDy5UUK8nFH9pp3wYm4=";
   };
 
   nativeBuildInputs =
@@ -53,8 +51,8 @@ buildDotnetModule rec {
 
   enableParallelBuilding = false;
 
-  dotnet-sdk = dotnetCorePackages.sdk_9_0;
-  dotnet-runtime = dotnetCorePackages.runtime_9_0;
+  dotnet-sdk = dotnetCorePackages.sdk_10_0;
+  dotnet-runtime = dotnetCorePackages.runtime_10_0;
 
   nugetDeps = ./deps.json;
 
