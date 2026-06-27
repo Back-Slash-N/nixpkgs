@@ -35,7 +35,7 @@ buildDotnetModule rec {
   version = "1.3.3";
 
   src = fetchGit {
-    url = "https://git.ryujinx.app/Ryubing/Ryujinx.git";
+    url = "https://git.ryujinx.app/projects/Ryubing.git";
     rev = "433dd58f8ce2fca3df3fa8b20bef7f003fc5a2a9";
     # hash = "sha256-yLf0NkdZvGNI7bbzx3Qursk3rDy5UUK8nFH9pp3wYm4=";
   };
